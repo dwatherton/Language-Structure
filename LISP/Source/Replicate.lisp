@@ -1,0 +1,36 @@
+(defun copy(s n)
+    (cond ((equal n 0) nil)
+        (t (append (list s) (copy s (- n 1))))
+    )
+)
+#|| An alternate method for this function is:
+	(defun copy(s n)
+		(loop for i from 1 to n
+			collect s
+		)
+	)
+||#
+(defun replicate(l nlist)
+    (cond ((or (null l) (null nlist)) nil)
+        ((equal (car nlist) 0) (replicate (cdr l) (cdr nlist)))
+        (t (append (list (car l)) (copy (car l)(- (car nlist) 1)) (replicate (cdr l) (cdr nlist))))
+    )
+)
+#|| An alternate method for this function is:
+(defun replicate(l nlist)
+    (cond ((equal (car nlist) 0) (replicate (cdr l) (cdr nlist)))
+            ((or (equal (car l) nil)(equal (car nlist) nil)) nil)
+            (t (append (list (car l))(copy (car l)(- (car nlist) 1))(replicate (cdr l) (cdr nlist))))
+    )
+)
+||#
+(setf A (replicate '(A B C D E) '(1 0 4 3 2)))
+(setf B (replicate '(W X Y Z X Q W) '(3 4 0 1)))
+(setf C (replicate '(1 2 3 1) '(1 2 3 4 5 6)))
+(setf D (replicate '(X W X E D R) nil))
+(setf E (replicate nil '(1 0 0 3 2)))
+(print A)
+(print B)
+(print C)
+(print D)
+(print E)

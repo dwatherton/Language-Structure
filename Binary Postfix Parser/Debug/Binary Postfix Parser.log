@@ -1,0 +1,3 @@
+﻿  Main.cpp
+c:\users\michelle\source\repos\language structures\binary postfix parser\main.cpp(50): warning C4018: '<': signed/unsigned mismatch
+  Binary Postfix Parser.vcxproj -> C:\Users\Michelle\source\repos\Language Structures\Binary Postfix Parser\Debug\Binary Postfix Parser.exe

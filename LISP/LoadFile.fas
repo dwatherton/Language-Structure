@@ -1,0 +1,18 @@
+(|SYSTEM|::|VERSION| '(20080430.))
+#0Y_ #0Y |CHARSET|::|UTF-8|
+#Y(#:|1 6 (DEFUN LOADFILE NIL ...)-1|
+   #20Y(00 00 00 00 00 00 00 00 20 01 DA 2F 01 DA DC 32 9C C5 19 01)
+   (|COMMON-LISP-USER|::|LOADFILE| |SYSTEM|::|REMOVE-OLD-DEFINITIONS|
+    #Y(|COMMON-LISP-USER|::|LOADFILE|
+       #30Y(00 00 00 00 00 00 00 00 26 01 DA 32 0D DB 6B 02 33 01 15 38 04 31
+            7F 0F 03 14 2F 04 19 01)
+       ("C:\\Users\\Danny\\Desktop\\LISP\\Source\\"
+        #Y(|COMMON-LISP-USER|::|LOADFILE-1|
+           #19Y(00 00 00 00 01 00 00 00 21 17 DA AF 38 02 31 95 9E 19 03)
+           ("Enter the name of the file to open: ")
+           (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+        |COMMON-LISP|::|*STANDARD-OUTPUT*| |COMMON-LISP-USER|::|%FILE%|
+        |COMMON-LISP|::|LOAD|)
+       (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|) ()
+       |COMMON-LISP|::|NIL| 1))
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
